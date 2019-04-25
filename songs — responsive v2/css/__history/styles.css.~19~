@@ -1,0 +1,319 @@
+@charset "utf-8";
+
+/*body>* {
+	border:1px solid;
+	}*/
+
+/* font-family: "MuseoSansRegular"; */
+
+@font-face {
+    font-family: "MuseoSansRegular";
+    src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot");
+    src: url("../fonts/MuseoSansRegular/MuseoSansRegular.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/MuseoSansRegular/MuseoSansRegular.woff") format("woff"),
+    src: url("../fonts/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font: 11pt MuseoSansRegular;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+header img {
+    float: left;
+    position: relative;
+    top: 5px;
+    margin-left: 50px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+header h1 {
+    text-transform: capitalize;
+    font-size: 45px;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    color: #EA1C24;
+    text-shadow: 1px 1px white,4px 4px black;
+    letter-spacing: -2px;
+    word-spacing: -4px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+aside {
+    float: left;
+    width: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+article {
+    float: left;
+    margin-left: 55px;
+    padding: 10px;
+    margin-right: 25px;
+    max-width: 850px;
+}
+
+article section h3 {
+    font-family: Verdana, sans-serif;
+    display: inline;
+}
+
+.listNo {
+    font: bold 12pt Verdana, sans-serif;
+    color: #E04A32;
+}
+
+footer {
+    clear: both;
+    background-color: #BDC3C7;
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    display: block;
+}
+
+.footerContent {
+    width: 35%;
+    padding: 15px;
+    text-align: left;
+    font-size: 10pt;
+}
+
+.listNo::after {
+    color: #868686;
+    content: " | ";
+}
+
+article section .songID {
+    margin: 10px 0;
+}
+
+article section .textContent {
+    padding: 15px;
+    margin-left: 50px;
+    margin-bottom: 70px;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 2em;
+    border-left: thin solid #E04A32;
+}
+
+h2 {
+    color: #868686;
+}
+
+#scroller {
+    position: fixed;
+    bottom: 110px;
+    background: transparent url(../img/arrow.png) no-repeat left top;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.5;
+}
+
+#scroller:hover {
+    opacity: 0.8;
+}
+
+footer #social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#social div {
+    margin: auto;
+}
+
+.imgBand img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 1px #C8C8C8;
+    -webkit-box-shadow: 3px 3px 1px #C8C8C8;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article a:visited,
+article a:link {
+    color: #E04A32;
+    border-bottom: 1px dotted;
+    border-bottom-color: #E04A32;
+}
+
+article a:hover {
+    border-bottom: 1px solid;
+    border-bottom-color: #E04A32;
+}
+
+article a:active {
+    color: #868686;
+}
+
+q {
+    font-style: italic;
+    color: #6C7A89;
+}
+
+#mainWrapper {
+    position: relative;
+    width: 35%;
+    min-width: 290px;
+    padding: 1em;
+    /*margin:2em 10px 4em;*/
+    margin: 24px auto;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    z-index: -2;
+}
+
+#mainWrapper article section>* {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    /* Убираем границу для браузера Firefox */
+    color: #FA6900;
+    /* Цвет линии для остальных браузеров */
+    background-color: #FA6900;
+    /* Цвет линии для браузера Firefox и Opera */
+    height: 1px;
+    /* Толщина линии */
+}
+
+.lyricButton {
+    width: 150px;
+    background-color: #FFFFFF;
+    border: 2px solid #DC3023;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #DC3023;
+    text-decoration: none;
+    margin-left: 35px;
+    padding: 10px 0;
+    display: block;
+}
+
+.lyricButton a {
+    text-decoration: none;
+    border: none !important;
+    display: block;
+}
+
+.lyricButton:hover a {
+    color: #FFFFFF;
+    text-decoration: none;
+    border: none;
+}
+
+.lyricButton:hover {
+    background-color: #DC3023;
+    box-shadow: 0 0 10px 2px #F4D03F;
+}
+
+.YT.float {
+    width: 150px;
+    background-color: #DC3023;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    margin-left: 35px;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.YT:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #DC3023;
+    box-shadow: 0 0 10px 2px #F4D03F;
+}
+
+.YT.float a {
+    border: none;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.YT:hover a {
+    color: #DC3023;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: -2;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+body aside iframe {
+    frameborder: 0;
+}
+
+@media screen and (max-width:1270px) {
+    aside {
+        display: none;
+    }
+
+    .YT.float a {
+        border: none;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width:1270px) {
+    aside {
+        display: block;
+    }
+
+    .YT.float {
+        display: none;
+    }
+}
